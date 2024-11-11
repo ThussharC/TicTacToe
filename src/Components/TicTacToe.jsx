@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./TicTacToe.css";
 import circle_icon from "../assets/circle.png";
 import cross_icon from "../assets/cross.png";
+import warning_icon from "../assets/warning.png";
 
 let data = ["", "", "", "", "", "", "", "", ""];
 const TicTacToe = () => {
@@ -157,6 +158,11 @@ const TicTacToe = () => {
       <button onClick={reset} className="reset">
         Reset
       </button>
+      <footer>
+        <img src={warning_icon} alt="" />
+        <span>Warning</span> This is a private copy. Not for commerical use.
+        Illegal usage will be subject to prosecution
+      </footer>
     </div>
   );
 };
